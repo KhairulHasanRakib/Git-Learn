@@ -1,18 +1,393 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Git Learn</title>
+    <title>Git Commands Reference</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #2c3e50;
+        }
+
+        .command-section {
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            margin: 20px 0;
+            padding: 20px;
+        }
+
+        .command {
+            background: #e7f3fe;
+            border-left: 4px solid #2196F3;
+            padding: 10px;
+            margin: 10px 0;
+            position: relative;
+        }
+
+        .copy-button {
+            position: absolute;
+            right: 10px;
+            top: 10px;
+            background: #2196F3;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            padding: 5px 10px;
+            cursor: pointer;
+        }
+
+        .copy-button:hover {
+            background: #1976D2;
+        }
+
+        pre {
+            margin: 0;
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+        h2 {
+            color: #2980b9;
+        }
+    </style>
 </head>
+
 <body>
-    <h1>Git Learn H1</h1>
-    <h2>Git Learn H2</h2>
-    <h3>Git Learn H3</h3>
-    <h4>Git Learn H4</h4>
-    <h5>Git Learn H5</h5>
-    <h6>Git Learn H6</h6>
-    <h7>Git Learn H7</h7>
-    <h8>Git Learn H8</h8>
+
+    <h1>Git Commands Reference</h1>
+
+    <div class="command-section">
+        <h2>Basic Commands</h2>
+        <div class="command">
+            <pre>git init</pre>
+            <button class="copy-button" onclick="copyToClipboard('git init')">Copy</button>
+            <p>Initializes a new Git repository.</p>
+            <p><strong>Usage:</strong> git init [repository-name]</p>
+        </div>
+        <div class="command">
+            <pre>git clone [url] [directory]</pre>
+            <button class="copy-button" onclick="copyToClipboard('git clone [url] [directory]')">Copy</button>
+            <p>Clones a repository into a new directory.</p>
+            <p><strong>Options:</strong> --branch &lt;branch&gt;, --depth &lt;depth&gt;</p>
+        </div>
+        <div class="command">
+            <pre>git add [file]</pre>
+            <button class="copy-button" onclick="copyToClipboard('git add [file]')">Copy</button>
+            <p>Adds changes to the staging area.</p>
+            <p><strong>Options:</strong> ., -A, -p</p>
+        </div>
+        <div class="command">
+            <pre>git commit -m "commit message"</pre>
+            <button class="copy-button" onclick="copyToClipboard('git commit -m')">Copy</button>
+            <p>Records changes to the repository.</p>
+            <p><strong>Options:</strong> -a, --amend</p>
+        </div>
+        <div class="command">
+            <pre>git status</pre>
+            <button class="copy-button" onclick="copyToClipboard('git status')">Copy</button>
+            <p>Shows the working tree status.</p>
+        </div>
+        <div class="command">
+            <pre>git log</pre>
+            <button class="copy-button" onclick="copyToClipboard('git log')">Copy</button>
+            <p>Shows the commit history.</p>
+            <p><strong>Options:</strong> --oneline, --graph, --author=&lt;author&gt;</p>
+        </div>
+        <div class="command">
+            <pre>git diff [options]</pre>
+            <button class="copy-button" onclick="copyToClipboard('git diff [options]')">Copy</button>
+            <p>Shows changes between commits, commit and working tree, etc.</p>
+            <p><strong>Options:</strong> HEAD, --cached</p>
+        </div>
+        <div class="command">
+            <pre>git branch [branch-name]</pre
+                <button class="copy-button" onclick="copyToClipboard('git branch [branch-name]')">Copy</button>
+                <p>Lists, creates, or deletes branches.</p>
+                <p><strong>Options:</strong> -d, -m</p>
+            </div>
+            <div class="command">
+                <pre>git checkout [branch-name]</pre>
+            <button class="copy-button" onclick="copyToClipboard('git checkout [branch-name]')">Copy</button>
+            <p>Switches branches or restores working tree files.</p>
+            <p><strong>Options:</strong> -b, --</p>
+        </div>
+        <div class="command">
+            <pre>git merge [branch-name]</pre>
+            <button class="copy-button" onclick="copyToClipboard('git merge [branch-name]')">Copy</button>
+            <p>Merges branches.</p>
+            <p><strong>Options:</strong> --no-ff</p>
+        </div>
+        <div class="command">
+            <pre>git pull [remote] [branch]</pre>
+            <button class="copy-button" onclick="copyToClipboard('git pull [remote] [branch]')">Copy</button>
+            <p>Fetches from a remote repository and merges.</p>
+            <p><strong>Options:</strong> --rebase</p>
+        </div>
+        <div class="command">
+            <pre>git push [remote] [branch]</pre>
+            <button class="copy-button" onclick="copyToClipboard('git push [remote] [branch]')">Copy</button>
+            <p>Updates remote refs along with associated objects.</p>
+            <p><strong>Options:</strong> --force, --tags</p>
+        </div>
+        <div class="command">
+            <pre>git remote [options]</pre>
+            <button class="copy-button" onclick="copyToClipboard('git remote [options]')">Copy</button>
+            <p>Manages set of tracked repositories.</p>
+            <p><strong>Options:</strong> add, remove, -v</p>
+        </div>
+    </div>
+
+    <div class="command-section">
+        <h2>Advanced Commands</h2>
+        <div class="command">
+            <pre>git rebase [branch]</pre>
+            <button class="copy-button" onclick="copyToClipboard('git rebase [branch]')">Copy</button>
+            <p>Reapplies commits on top of another base tip.</p>
+            <p><strong>Options:</strong> -i</p>
+        </div>
+        <div class="command">
+            <pre>git cherry-pick commit</pre>
+            <button class="copy-button" onclick="copyToClipboard('git cherry-pick <commit>')">Copy</button>
+            <p>Apply the changes introduced by some existing commits.</p>
+            <p><strong>Options:</strong> -n</p>
+        </div>
+        <div class="command">
+            <pre>git stash</pre>
+            <button class="copy-button" onclick="copyToClipboard('git stash')">Copy</button>
+            <p>Stashes changes in a dirty working directory.</p>
+            <p><strong>Options:</strong> apply, pop, list</p>
+        </div>
+        <div class="command">
+            <pre>git tag [tag-name]</pre>
+            <button class="copy-button" onclick="copyToClipboard('git tag [tag-name]')">Copy</button>
+            <p>Creates, lists, or deletes tags.</p>
+            <p><strong>Options:</strong> -a, -d</p>
+        </div>
+        <div class="command">
+            <pre>git fetch [remote]</pre>
+            <button class="copy-button" onclick="copyToClipboard('git fetch [remote]')">Copy</button>
+            <p>Downloads objects and refs from another repository.</p>
+            <p><strong>Options:</strong> --prune</p>
+        </div>
+    </div>
+
+    <div class="command-section">
+        <h2>Common Workflows</h2>
+        <div class="command">
+            <pre>mkdir my-repo && cd my-repo && git init</pre>
+            <button class="copy-button"
+                onclick="copyToClipboard('mkdir my-repo && cd my-repo && git init')">Copy</button>
+            <p>Create a new Git repository.</p>
+        </div>
+        <div class="command">
+            <pre>git remote add origin remote-repo-url</pre>
+            <button class="copy-button"
+                onclick="copyToClipboard('git remote add origin <remote-repo-url>')">Copy</button>
+            <p>Add a remote repository (e.g., on GitHub).</p>
+        </div>
+        <div class="command">
+            <pre>git branch branch-name</pre>
+            <button class="copy-button" onclick="copyToClipboard('git branch <branch-name>')">Copy</button>
+            <p>Create a new branch.</p>
+        </div>
+        <div class="command">
+            <pre>git checkout branch-name</pre>
+            <button class="copy-button" onclick="copyToClipboard('git checkout <branch-name>')">Copy</button>
+            <p>Switch to the new branch.</p>
+        </div>
+        <div class="command">
+            <pre>git branch -d branch-name</pre>
+            <button class="copy-button" onclick="copyToClipboard('git branch -d <branch-name>')">Copy</button>
+            <p>Delete a branch.</p>
+        </div>
+        <div class="command">
+            <pre>git add <file></pre>
+            <button class="copy-button" onclick="copyToClipboard('git add <file>')">Copy</button>
+            <p>Stage changes.</p>
+        </div>
+        <div class="command">
+            <pre>git commit -m "Your commit message"</pre>
+            <button class="copy-button" onclick="copyToClipboard('git commit -m')">Copy</button>
+            <p>Commit changes.</p>
+        </div>
+        <div class="command">
+            <pre>git clone repository-url</pre>
+            <button class="copy-button" onclick="copyToClipboard('git clone <repository-url>')">Copy</button>
+            <p>Clone a repository to your local machine.</p>
+        </div>
+        <div class="command">
+            <pre>git tag tag-name</pre>
+            <button class="copy-button" onclick="copyToClipboard('git tag <tag-name>')">Copy</button>
+            <p>Create a tag.</p>
+        </div>
+        <div class="command">
+            <pre>git push origin branch-name</pre>
+            <button class="copy-button" onclick="copyToClipboard('git push origin <branch-name>')">Copy</button>
+            <p>Push changes to the remote repository.</p>
+        </div>
+        <div class="command">
+            <pre>git pull origin branch-name</pre>
+            <button class="copy-button" onclick="copyToClipboard('git pull origin <branch-name>')">Copy</button>
+            <p>Pull changes from the remote repository.</p>
+        </div>
+        <div class="command">
+            <pre>git remote -v</pre>
+            <button class="copy-button" onclick="copyToClipboard('git remote -v')">Copy</button>
+            <p>View the remote repositories you have configured.</p>
+        </div>
+        <div class="command">
+            <pre>git remote remove remote-name</pre>
+            <button class="copy-button" onclick="copyToClipboard('git remote remove <remote-name>')">Copy</button>
+            <p>Remove a remote repository.</p>
+        </div>
+    </div>
+
+    <div class="command-section">
+        <h2>Viewing Existing Elements</h2>
+        <div class="command">
+            <pre>git remote -v</pre>
+            <button class="copy-button" onclick="copyToClipboard('git remote -v')">Copy</button>
+            <p>View remote repositories.</p>
+        </div>
+        <div class="command">
+            <pre>git branch</pre>
+            <button class="copy-button" onclick="copyToClipboard('git branch')">Copy</button>
+            <p>Lists local branches.</p>
+        </div>
+        <div class="command">
+            <pre>git branch -r</pre>
+            <button class="copy-button" onclick="copyToClipboard('git branch -r')">Copy</button>
+            <p>Lists remote branches.</p>
+        </div>
+        <div class="command">
+            <pre>git branch -a</pre>
+            <button class="copy-button" onclick="copyToClipboard('git branch -a')">Copy</button>
+            <p>Lists all branches (local + remote).</p>
+        </div>
+        <div class="command
+                <div class=" command">
+            <pre>git tag</pre>
+            <button class="copy-button" onclick="copyToClipboard('git tag')">Copy</button>
+            <p>Lists all tags.</p>
+        </div>
+        <div class="command">
+            <pre>git log</pre>
+            <button class="copy-button" onclick="copyToClipboard('git log')">Copy</button>
+            <p>Shows commit history.</p>
+        </div>
+    </div>
+
+    <div class="command-section">
+        <h2>Creating New Elements</h2>
+        <div class="command">
+            <pre>git remote add remote-name remote-url</pre>
+            <button class="copy-button"
+                onclick="copyToClipboard('git remote add <remote-name> <remote-url>')">Copy</button>
+            <p>Create a new remote.</p>
+        </div>
+        <div class="command">
+            <pre>git branch new-branch-name</pre>
+            <button class="copy-button" onclick="copyToClipboard('git branch <new-branch-name>')">Copy</button>
+            <p>Create a new branch.</p>
+        </div>
+        <div class="command">
+            <pre>git tag new-tag-name</pre>
+            <button class="copy-button" onclick="copyToClipboard('git tag <new-tag-name>')">Copy</button>
+            <p>Create a new tag.</p>
+        </div>
+        <div class="command">
+            <pre>git add file</pre>
+            <button class="copy-button" onclick="copyToClipboard('git add <file>')">Copy</button>
+            <p>Create a new commit.</p>
+        </div>
+        <div class="command">
+            <pre>git commit -m "Your commit message"</pre>
+            <button class="copy-button" onclick="copyToClipboard('git commit -m')">Copy</button>
+            <p>Commit your changes.</p>
+        </div>
+    </div>
+
+    <div class="command-section">
+        <h2>Deleting Elements</h2>
+        <div class="command">
+            <pre>git remote remove remote-name</pre>
+            <button class="copy-button" onclick="copyToClipboard('git remote remove <remote-name>')">Copy</button>
+            <p>Delete a remote.</p>
+        </div>
+        <div class="command">
+            <pre>git branch -d branch-name</pre>
+            <button class="copy-button" onclick="copyToClipboard('git branch -d <branch-name>')">Copy</button>
+            <p>Delete a branch.</p>
+        </div>
+        <div class="command">
+            <pre>git tag -d tag-name</pre>
+            <button class="copy-button" onclick="copyToClipboard('git tag -d <tag-name>')">Copy</button>
+            <p>Delete a tag.</p>
+        </div>
+        <div class="command">
+            <pre>git reset --soft HEAD~1</pre>
+            <button class="copy-button" onclick="copyToClipboard('git reset --soft HEAD~1')">Copy</button>
+            <p>Remove the last commit (keep changes).</p>
+        </div>
+        <div class="command">
+            <pre>git reset --hard HEAD~1</pre>
+            <button class="copy-button" onclick="copyToClipboard('git reset --hard HEAD~1')">Copy</button>
+            <p>Remove the last commit (discard changes).</p>
+        </div>
+    </div>
+
+    <div class="command-section">
+        <h2>Renaming Elements</h2>
+        <div class="command">
+            <pre>git remote rename old-remote-name new-remote-name</pre>
+            <button class="copy-button"
+                onclick="copyToClipboard('git remote rename <old-remote-name> <new-remote-name>')">Copy</button>
+            <p>Rename a remote.</p>
+        </div>
+        <div class="command">
+            <pre>git branch -m new-branch-name</pre>
+            <button class="copy-button" onclick="copyToClipboard('git branch -m <new-branch-name>')">Copy</button>
+            <p>Rename a branch (if on the branch).</p>
+        </div>
+        <div class="command">
+            <pre>git branch -m old-branch-name new-branch-name</pre>
+            <button class="copy-button"
+                onclick="copyToClipboard('git branch -m <old-branch-name> <new-branch-name>')">Copy</button>
+            <p>Rename a branch (if on a different branch).</p>
+        </div>
+        <div class="command">
+            <pre>git tag -d old-tag-name</pre>
+            <button class="copy-button" onclick="copyToClipboard('git tag -d <old-tag-name>')">Copy</button>
+            <p>Delete the old tag.</p>
+        </div>
+        <div class="command">
+            <pre>git tag new-tag-name</pre>
+            <button class="copy-button" onclick="copyToClipboard('git tag <new-tag-name>')">Copy</button>
+            <p>Create a new tag with the new name.</p>
+        </div>
+    </div>
+
+    <script>
+        function copyToClipboard(text) {
+            const tempInput = document.createElement('input');
+            tempInput.value = text;
+            document.body.appendChild(tempInput);
+            tempInput.select();
+            document.execCommand('copy');
+            document.body.removeChild(tempInput);
+            alert('Copied to clipboard: ' + text);
+        }
+    </script>
 </body>
+
 </html>
