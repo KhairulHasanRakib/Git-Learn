@@ -1,0 +1,196 @@
+📅 Data Entry
+
+Tools
+1. TripAdvisor
+2. Social Blade
+3. Email Extractor
+4. yelp.com
+5. Truelancer.com
+6. Web scrapper
+7. Instant data scrapper
+8. LinkedIn X-ray
+9. Fiverr quick view 
+
+📦 Git Learn
+
+git config -l
+git config --global user.name "name"
+git config --global user.email "email"
+git config --global credential.helper cache
+git init
+git add filename / git add . / git add fil* / 
+git status
+git commit
+git commit -m "comment message"
+git commit -a -m"your commit message here"
+git log
+git log -p
+git show commit-id
+git log --stat
+git diff
+git diff all_checks.py
+git diff --staged
+git add -p
+git rm filename
+git mv oldfile newfile
+git checkout filename
+git reset HEAD filename
+git reset HEAD -p
+git commit --amend
+git revert HEAD
+git revert comit_id_here
+git branch branch_name
+git checkout branch_name
+git branch
+git checkout -b branch_name
+git branch -d branch_name
+git merge branch_name
+git log --graph --oneline
+git log --graph --oneline --all
+git merge --abort
+git add remote https://repo_here
+git remote -v
+git remote show origin
+git push
+git pull
+git branch -r
+git fetch
+git log origin/main
+git remote update
+git push -u origin branch_name
+git push --delete origin branch_name_here
+git rebase branch_name_here
+git rebase -i master
+git push -f
+
+
+
+1. **General Figma Tutorials**:
+   - "Figma beginner tutorial"
+   - "Figma complete guide"
+   - "Figma for beginners"
+
+2. **Specific Features**:
+   - "Figma components tutorial"
+   - "Figma variants tutorial"
+   - "Figma constraints tutorial"
+   - "Figma auto layout tutorial"
+   - "Figma masks tutorial"
+   - "Figma boolean operations tutorial"
+   - "Figma clip content tutorial"
+   - "Figma effects tutorial"
+   - "Figma image fill tutorial"
+   - "Figma blend modes tutorial"
+   - "Figma grid and layout guides tutorial"
+   - "Figma smart selection tutorial"
+
+3. **Project-Based Learning**:
+   - "Figma UI design tutorial"
+   - "Figma web design tutorial"
+   - "Figma mobile app design tutorial"
+   - "Figma prototyping tutorial"
+
+4. **Advanced Techniques**:
+   - "Figma design systems tutorial"
+   - "Figma plugins tutorial"
+   - "Figma collaboration features tutorial"
+
+5. **Tips and Tricks**:
+   - "Figma tips and tricks"
+   - "Figma shortcuts and hacks"
+
+
+Devops Guide 2025
+
+Step1 : Linux Fundamentals
+- CLI (BASH)
+- Process & Permissions : ps, kill, chmod
+- package management : apt, yum
+- Text editors : vim
+
+Step2 : Networking & Security concepts
+- OSI, TCP/IP models
+- Different protocols : http, https, ssh etc.
+- IP addresses, subnetting, DNS
+- Network issues
+- firewalls, proxy servers
+Going forward : load balancers & caching servers.
+
+Step3 : Scripting (Programming language)
+popular options : Python, Ruby, Golang
+- Syntax & fundamentals
+- Useful libraries
+- File handling
+- Writing automation scripts
+
+Step4 : Version Control (git)
+- imp. Git commands : init, clone, add, commit, push, pull, merge, rebase etc.
+- concept of branching
+- merging & merge conflict resolution
+- working with remote repositories
+
+Step5 : Cloud
+popular options : AWS, Azure, GCP
+- configure & manage servers & data (EC2, S3, RDS)
+- manage users, groups & roles (IAM)
+- setup & manage isolated networks (VPC)
+Devops Guide 2025
+
+/
+Wire shark
+
+Step6 : Microservices & Containers
+popular option : Docker
+- overview of virtualization & containerization
+- docker images & managing containers
+- docker commands : run, ps, build etc.
+- writing docker files
+- using docker compose
+
+Step7 : CI/CD
+popular options : Jenkins, Github Actions CI/CD, Gitlab CI, Circle CI, Travis CI
+
+Step8 : Infrastructure as Code (IaC)
+
+Provisioning Configuring
+Terraform Ansible
+Alt : Pulumi Alt : Puppet, Chef
+
+Step9 : Orchestration & Management
+popular option : Kubernetes
+- creating & managing k8s clusters
+- deployment of applications on k8s
+- k8s commands : apply, build, delete etc.
+
+Step10 : Monitoring & Logging
+popular option : Prometheus, Grafana
+Alt : ELK, Fluentd, AWS CloudWatch
+
+Step11 : Service Mesh
+Popular option : Istio, GitOps
+Alt : argo, Flux
+
+
+
+https://diu.ac/
+diu.ac 
+172.64.80.1
+
+https://medium.com/@velmuruganofficial/top-15-advanced-and-best-information-gathering-tools-67f07550e502
+
+whatweb -v -a 3 https://diu.ac/
+python3 /usr/bin/sublist3r -d diu.ac
+knockpy -d diu.ac 
+
+https://www.cyberbugs.in/post/best-information-gathering-tools
+https://viewdns.info/
+https://levelup.gitconnected.com/information-gathering-first-step-towards-website-hacking-462dcad56c5a
+https://medium.com/@anandkumar6202399507/information-gathering-tools-ed77fb9d5cf4
+https://medium.com/stolabs/web-application-enumeration-c23090dd66e7
+https://home.ubalt.edu/abento/753/enumeration/enumerationtools.html
+https://hack.technoherder.com/website-enumeration/
+https://blog.sec-it.fr/en/2021/02/16/fuzz-dir-tools/
+
+amass enum -d diu.ac
+dirb https://diu.ac
+
